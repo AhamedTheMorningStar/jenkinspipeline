@@ -7,7 +7,7 @@
                 sh 'uname -a'
             }
         }
-        /*stage('Build docker image'){
+        stage('Build docker image'){
             steps{
                 script{
                     sh 'docker build -t javatechie/devops-integration .'
@@ -30,7 +30,7 @@
                     kubernetesDeploy (configs: 'deploymentservice.yaml',kubeconfigId: 'k8sconfigpwd')
                 }
             }
-        }*/
+        }
     }
 }*/
 
