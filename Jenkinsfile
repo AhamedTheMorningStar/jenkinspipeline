@@ -4,6 +4,7 @@ pipeline {
         stage('Check System'){
             steps{
                 sh 'whoami'
+                sh 'uname -a'
             }
         }
         /*stage('Build docker image'){
